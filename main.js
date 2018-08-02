@@ -1,3 +1,4 @@
+// Solution broken down into pieces for readability
 function printLabels(batchSize, caseQty, labeledFcst, unlabeledFcst) {
 	var ratio, labeledOrder, unLabeledOrder;
 
@@ -9,6 +10,7 @@ function printLabels(batchSize, caseQty, labeledFcst, unlabeledFcst) {
 	return 'We will need ' + labeledOrder + ' labeled units and ' + unLabeledOrder + ' unlabeled units.';
 }
 
+// Simple One Line Solution - Difficult to Read
 function printLabelsOneLiner(e,n,l,t){return"We will need "+Math.floor(l/(l+t)*e/n)*n+" labeled units and "+(e-Math.floor(l/(l+t)*e/n)*n)+" unlabeled units."}}
 
 console.log(printLabelsQuick(2500,60,1520,180));
